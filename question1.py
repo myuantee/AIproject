@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 import seaborn as sns
 
-st.title("Vacation Planner")
+st.title("Question 1: Vacation Planner")
 st.markdown("Solving a vacation planning problem using Genetic Algorithm (GA). The goal is to optimize the vacation experience with fixed amount of money and fixed duration. This application will generate the best combination of values for each parameter.")
 
 st.markdown("Customize your **Money On-Hand** and **Duration** in the sidebar.")
