@@ -93,7 +93,6 @@ def evolve(pop, retain, mutate, crossover1, crossover2, random_select = 0.05):
     
     return parents
 
-
 def ga():
     # creates empty lists to store the results
     value_lst = []
