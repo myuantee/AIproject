@@ -19,8 +19,8 @@ st.write("""
 st.sidebar.header('User input')
 
 
-budget = st.sidebar.slider('Budget',('5000','8000'))
-duration =  st.sidebar.slider('Duration(Days)',('3','4','5','6','7','8'))
+budget = st.sidebar.selectbox('Budget',('3000','4000','5000','6000','7000','8000'))
+duration =  st.sidebar.selectbox('Duration(Days)',('3','4','5','6','7','8'))
 data = {'Budget': budget,
         'Duration': duration}
     
