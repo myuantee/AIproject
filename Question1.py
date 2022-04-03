@@ -10,10 +10,6 @@ import streamlit as st
 
 st.write("""
 # Genetic Algorithm Application
-
-
-
-
 """)
 
 st.sidebar.header('User input')
@@ -110,15 +106,8 @@ for i in range(n_generation):
 
 #plot chart for findings
 
-data =  {"fitness history": fitness_history,"individual" : np.arange(1,201)} # assigns data of lists
+data =  {"fitness history": fitness_history} # assigns data of lists
 
-# print("value list :",value_lst)
-# print("\n")
-# print("value list for test:",value_lst[::2])
-# print("\n")
-# print("fitness :",fitness_history)
-# print("\n")
-# print("population :",p)
 
 df = pd.DataFrame(data) # creates dataframe 
 df.index = range(1, df.shape[0] + 1) # starts the dataframe index with 1
@@ -131,12 +120,6 @@ st.line_chart(df)
 
 
 ##show solutions
-
-# parameter = ["Money on-hand", "Vacation duration", "Hotel star rating", "Tourist spots",
-#             "One tourist spot", "Food price", "Transportation fees", "Transport frequency"]
-# value_lst[-2]
-
-
 solution = {
             "Money on-hand " : budget,
             "Vacation duration " : duration,
@@ -156,14 +139,10 @@ total
 x_list = list(solution.keys())
 y_list =list(solution.values())
 
-
-
-# solutiondict = {'Parameters': x_list,'Values':y_list}
-# df = pd.DataFrame('Parameters':x,'Value':)
 df = pd.DataFrame({'Parameters':x_list,
                     'Values':y_list})
 
-
+## hide the table indices
 styler = df.style.hide_index()
 
 st.write(styler.to_html(), unsafe_allow_html=True)
