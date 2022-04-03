@@ -132,7 +132,7 @@ def ga():
     df.loc[4] = [parameter[4], "< RM{}".format(value[4])]
     df.loc[5] = [parameter[5], "< RM{} per meal".format(value[5])]
     df.loc[6] = [parameter[6], "< RM{} per trip".format(value[6])]
-    df.loc[7] = [parameter[7], "{} trip per day".format(value[7])]
+    df.loc[7] = [parameter[7], "{} trips per day".format(value[7])]
 
     styler = df.style.hide_index()
     st.write(styler.to_html(), unsafe_allow_html = True)
