@@ -15,8 +15,8 @@ budget = st.sidebar.slider("Money On-Hand (RM)", min_value = 1000, max_value = 1
 duration = st.sidebar.slider("Duration (Day)", min_value = 2, max_value = 10, value = 2, step = 1)
 p_count = st.sidebar.slider("Population", min_value = 100, max_value = 1000, value = 100, step = 100)
 n_generation = st.sidebar.slider("Generation", min_value = 100, max_value = 1000, value = 200, step = 100)
-spots = st.sidebar.slider("Tourist Spots", min_value = 2, max_value = 10, value = 5, step = 1)
-tfre = st.sidebar.slider("Transportation Frequency",min_value = 1,max_value = 10,value = 5,step = 1)
+spots = st.sidebar.slider("spots", min_value = 2, max_value = 10, value = 5, step = 1)
+tfre = st.sidebar.slider("transportation frequency",min_value = 1,max_value = 10,value = 5,step = 1)
 data = {"Budget" : budget,
         "Duration" : duration,
         "population" : p_count,
@@ -164,7 +164,7 @@ st.write(styler.to_html(), unsafe_allow_html = True)
 
 st.write("#")
 st.subheader("Method 1")
-retain = 0.2
+retain = 0.3
 mutate = 0.01
 crossover1 = 3
 crossover2 = 3
@@ -172,15 +172,15 @@ hist1, fit1, df1 = ga()
 
 st.write("#")
 st.subheader("Method 2")
-retain = 0.5
-mutate = 0.05
+retain = 0.3
+mutate = 0.07
 crossover1 = 1
 crossover2 = 1
 hist2, fit2, df2 = ga()
 
 st.write("#")
 st.subheader("Method 3")
-retain = 0.1
+retain = 0.8
 mutate = 0.01
 crossover1 = 2
 crossover2 = 2
