@@ -420,7 +420,7 @@ plt.title("Fitness Score Comparison")
 
 st.write("#")
 fig, ax = plt.subplots(figsize = (10, 5))
-plt.bar(list(fit_data.keys()), list(fit_data.values()))
+plt.bar(list(fit_data2.keys()), list(fit_data2.values()))
 
 ax.set_xlabel("Method")
 ax.set_ylabel("Fitness")
