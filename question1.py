@@ -116,7 +116,6 @@ def ga():
     # creates empty lists to store the results
     value_lst = []
     fitness_history = []
-    value_list = []
 
     p = population(p_count)
 
@@ -310,8 +309,7 @@ def evolve2(pop, retain, mutate, crossover1, crossover2, random_select = 0.05):
 def ga2():
     # creates empty lists to store the results
     value_lst = []
-    fitness_history = []    
-    value_list = []
+    fitness_history = []
 
     p = population2(p_count, spots, tfre)
 
