@@ -35,9 +35,9 @@ st.write("""---""")
 st.subheader("Method Specifications")
 table = pd.DataFrame()
 table[" "] = ["Selection (%)", "Mutate Position", "From Male", "From Female"]
-table["Method 1"] = ["30", "3", "first 3", "last 3"]
-table["Method 2"] = ["50", "5", "first 1", "last 5"]
-table["Method 3"] = ["10", "1", "first 2", "last 4"]
+table["Method 1"] = ["30", "1", "first 3", "last 3"]
+table["Method 2"] = ["30", "7", "first 1", "last 5"]
+table["Method 3"] = ["80", "1", "first 2", "last 4"]
 
 styler = table.style.hide_index()
 st.write(styler.to_html(), unsafe_allow_html = True)
